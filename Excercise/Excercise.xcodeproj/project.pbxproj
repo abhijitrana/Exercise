@@ -15,6 +15,8 @@
 		27FF10FF21910C110007217D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FF10FD21910C110007217D /* LaunchScreen.storyboard */; };
 		27FF111C219114B10007217D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF111B219114B10007217D /* APIClient.swift */; };
 		27FF111E2191159C0007217D /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF111D2191159C0007217D /* Connectivity.swift */; };
+		27FF112E219117D30007217D /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF112D219117D30007217D /* ListModel.swift */; };
+		27FF1130219117FB0007217D /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF112F219117FB0007217D /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		27FF110021910C110007217D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FF111B219114B10007217D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		27FF111D2191159C0007217D /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		27FF112D219117D30007217D /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		27FF112F219117FB0007217D /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		470EB430609DC01BDAD206BD /* Pods_Excercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCFAFB1A85A9E6E2A4991F5 /* Pods-Excercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Excercise/Pods-Excercise.debug.xcconfig"; sourceTree = "<group>"; };
 		96913B3737D309702EB0ACCC /* Pods-Excercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Excercise/Pods-Excercise.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		27FF110921910DAD0007217D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				27FF112F219117FB0007217D /* ListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		27FF110B21910DCE0007217D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				27FF112D219117D30007217D /* ListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,8 +272,10 @@
 			files = (
 				27FF111E2191159C0007217D /* Connectivity.swift in Sources */,
 				27FF10F721910C040007217D /* ListViewController.swift in Sources */,
+				27FF1130219117FB0007217D /* ListViewModel.swift in Sources */,
 				27FF10F521910C040007217D /* AppDelegate.swift in Sources */,
 				27FF111C219114B10007217D /* APIClient.swift in Sources */,
+				27FF112E219117D30007217D /* ListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
