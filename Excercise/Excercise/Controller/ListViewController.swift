@@ -128,10 +128,10 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let viewController = storyboard.instantiateViewController(withIdentifier :"DetailViewController") as! DetailViewController
-//        viewController.setData = self.viewModel.dataArray[indexPath.row]
-//        self.navigationController?.pushViewController(viewController, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier :"DetailViewController") as! DetailViewController
+        viewController.setData = self.viewModel.dataArray[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

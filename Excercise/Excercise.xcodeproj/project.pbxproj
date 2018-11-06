@@ -20,6 +20,7 @@
 		27FF113521911D390007217D /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF113421911D390007217D /* ListTableViewCell.swift */; };
 		27FF1137219120500007217D /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF1136219120500007217D /* UIImageView+Extensions.swift */; };
 		27FF11392191215B0007217D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF11382191215B0007217D /* UIView+Extension.swift */; };
+		27FF113B219123F40007217D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF113A219123F40007217D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		27FF113421911D390007217D /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		27FF1136219120500007217D /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		27FF11382191215B0007217D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		27FF113A219123F40007217D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		470EB430609DC01BDAD206BD /* Pods_Excercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCFAFB1A85A9E6E2A4991F5 /* Pods-Excercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Excercise/Pods-Excercise.debug.xcconfig"; sourceTree = "<group>"; };
 		96913B3737D309702EB0ACCC /* Pods-Excercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Excercise/Pods-Excercise.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				27FF113321911D1F0007217D /* Cells */,
 				27FF1131219119090007217D /* ListViewController.swift */,
+				27FF113A219123F40007217D /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				27FF10F521910C040007217D /* AppDelegate.swift in Sources */,
 				27FF111C219114B10007217D /* APIClient.swift in Sources */,
 				27FF112E219117D30007217D /* ListModel.swift in Sources */,
+				27FF113B219123F40007217D /* DetailViewController.swift in Sources */,
 				27FF1137219120500007217D /* UIImageView+Extensions.swift in Sources */,
 				27FF1132219119090007217D /* ListViewController.swift in Sources */,
 			);
