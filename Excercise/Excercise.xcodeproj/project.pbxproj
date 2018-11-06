@@ -22,10 +22,18 @@
 		27FF11392191215B0007217D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF11382191215B0007217D /* UIView+Extension.swift */; };
 		27FF113B219123F40007217D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF113A219123F40007217D /* DetailViewController.swift */; };
 		27FF1143219126170007217D /* ExcerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF1142219126170007217D /* ExcerciseTests.swift */; };
+		FC77F5352191900500CADB50 /* ExcerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77F5342191900500CADB50 /* ExcerciseUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		27FF1145219126170007217D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27FF10E921910C040007217D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27FF10F021910C040007217D;
+			remoteInfo = Excercise;
+		};
+		FC77F5372191900500CADB50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27FF10E921910C040007217D /* Project object */;
 			proxyType = 1;
@@ -56,6 +64,9 @@
 		470EB430609DC01BDAD206BD /* Pods_Excercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCFAFB1A85A9E6E2A4991F5 /* Pods-Excercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Excercise/Pods-Excercise.debug.xcconfig"; sourceTree = "<group>"; };
 		96913B3737D309702EB0ACCC /* Pods-Excercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Excercise/Pods-Excercise.release.xcconfig"; sourceTree = "<group>"; };
+		FC77F5322191900400CADB50 /* ExcerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC77F5342191900500CADB50 /* ExcerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseUITests.swift; sourceTree = "<group>"; };
+		FC77F5362191900500CADB50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +79,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		27FF113D219126170007217D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC77F52F2191900400CADB50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,6 +109,7 @@
 			children = (
 				27FF10F321910C040007217D /* Excercise */,
 				27FF1141219126170007217D /* ExcerciseTests */,
+				FC77F5332191900500CADB50 /* ExcerciseUITests */,
 				27FF10F221910C040007217D /* Products */,
 				26BD351CC3AEB4F81E47D277 /* Pods */,
 				64AE33A0EC9E85B3BBA54138 /* Frameworks */,
@@ -102,6 +121,7 @@
 			children = (
 				27FF10F121910C040007217D /* Excercise.app */,
 				27FF1140219126170007217D /* ExcerciseTests.xctest */,
+				FC77F5322191900400CADB50 /* ExcerciseUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +228,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC77F5332191900500CADB50 /* ExcerciseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC77F5342191900500CADB50 /* ExcerciseUITests.swift */,
+				FC77F5362191900500CADB50 /* Info.plist */,
+			);
+			path = ExcerciseUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,6 +277,24 @@
 			productReference = 27FF1140219126170007217D /* ExcerciseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FC77F5312191900400CADB50 /* ExcerciseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC77F5392191900500CADB50 /* Build configuration list for PBXNativeTarget "ExcerciseUITests" */;
+			buildPhases = (
+				FC77F52E2191900400CADB50 /* Sources */,
+				FC77F52F2191900400CADB50 /* Frameworks */,
+				FC77F5302191900400CADB50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC77F5382191900500CADB50 /* PBXTargetDependency */,
+			);
+			name = ExcerciseUITests;
+			productName = ExcerciseUITests;
+			productReference = FC77F5322191900400CADB50 /* ExcerciseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,6 +309,10 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					27FF113F219126170007217D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 27FF10F021910C040007217D;
+					};
+					FC77F5312191900400CADB50 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 27FF10F021910C040007217D;
 					};
@@ -282,6 +333,7 @@
 			targets = (
 				27FF10F021910C040007217D /* Excercise */,
 				27FF113F219126170007217D /* ExcerciseTests */,
+				FC77F5312191900400CADB50 /* ExcerciseUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +350,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		27FF113E219126170007217D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC77F5302191900400CADB50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,6 +432,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC77F52E2191900400CADB50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC77F5352191900500CADB50 /* ExcerciseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -380,6 +447,11 @@
 			isa = PBXTargetDependency;
 			target = 27FF10F021910C040007217D /* Excercise */;
 			targetProxy = 27FF1145219126170007217D /* PBXContainerItemProxy */;
+		};
+		FC77F5382191900500CADB50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27FF10F021910C040007217D /* Excercise */;
+			targetProxy = FC77F5372191900500CADB50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,6 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Excercise/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +617,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Excercise/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,6 +667,42 @@
 			};
 			name = Release;
 		};
+		FC77F53A2191900500CADB50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExcerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.umesh.ExcerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Excercise;
+			};
+			name = Debug;
+		};
+		FC77F53B2191900500CADB50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExcerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.umesh.ExcerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Excercise;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -619,6 +729,15 @@
 			buildConfigurations = (
 				27FF1148219126170007217D /* Debug */,
 				27FF1149219126170007217D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC77F5392191900500CADB50 /* Build configuration list for PBXNativeTarget "ExcerciseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC77F53A2191900500CADB50 /* Debug */,
+				FC77F53B2191900500CADB50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

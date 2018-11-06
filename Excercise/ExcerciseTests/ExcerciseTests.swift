@@ -15,11 +15,9 @@ class ExcerciseTests: XCTestCase {
     let viewModel = ListViewModel(client: APIClient())
     
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     //MARK: - Unit Test Case For Response Json
@@ -42,6 +40,7 @@ class ExcerciseTests: XCTestCase {
             expect.fulfill()
         }
         
+        //Wait for a time interval for getting response from Server
         waitForExpectations(timeout: 10) { (error) in
             if let error = error {
                 XCTFail("error: \(error)")
