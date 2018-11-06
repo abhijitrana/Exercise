@@ -113,6 +113,7 @@ class ListViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 extension ListViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
         cell.setData = self.viewModel.dataArray[indexPath.row]
