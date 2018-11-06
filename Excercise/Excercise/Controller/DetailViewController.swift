@@ -22,6 +22,7 @@ class DetailViewController: UIViewController {
         setupViews()
     }
     
+    
     // MARK: - Setup Views
     private func setupViews(){
         guard let data = setData else {return}
