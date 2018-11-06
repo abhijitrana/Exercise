@@ -9,20 +9,24 @@
 /* Begin PBXBuildFile section */
 		1F6147B9E246FC3E67C6A4C7 /* Pods_Excercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470EB430609DC01BDAD206BD /* Pods_Excercise.framework */; };
 		27FF10F521910C040007217D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF10F421910C040007217D /* AppDelegate.swift */; };
-		27FF10F721910C040007217D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF10F621910C040007217D /* ViewController.swift */; };
+		27FF10F721910C040007217D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF10F621910C040007217D /* ListViewController.swift */; };
 		27FF10FA21910C040007217D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FF10F821910C040007217D /* Main.storyboard */; };
 		27FF10FC21910C110007217D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FF10FB21910C110007217D /* Assets.xcassets */; };
 		27FF10FF21910C110007217D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FF10FD21910C110007217D /* LaunchScreen.storyboard */; };
+		27FF111C219114B10007217D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF111B219114B10007217D /* APIClient.swift */; };
+		27FF111E2191159C0007217D /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF111D2191159C0007217D /* Connectivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27FF10F121910C040007217D /* Excercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Excercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FF10F421910C040007217D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27FF10F621910C040007217D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27FF10F621910C040007217D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		27FF10F921910C040007217D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27FF10FB21910C110007217D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27FF10FE21910C110007217D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27FF110021910C110007217D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FF111B219114B10007217D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		27FF111D2191159C0007217D /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		470EB430609DC01BDAD206BD /* Pods_Excercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Excercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCFAFB1A85A9E6E2A4991F5 /* Pods-Excercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Excercise/Pods-Excercise.debug.xcconfig"; sourceTree = "<group>"; };
 		96913B3737D309702EB0ACCC /* Pods-Excercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Excercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Excercise/Pods-Excercise.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,8 +74,14 @@
 		27FF10F321910C040007217D /* Excercise */ = {
 			isa = PBXGroup;
 			children = (
+				27FF110C21910DE60007217D /* NetworkManager */,
+				27FF110B21910DCE0007217D /* Model */,
+				27FF110A21910DBB0007217D /* Controller */,
+				27FF110921910DAD0007217D /* ViewModel */,
+				27FF110821910DA40007217D /* View */,
+				27FF110721910D910007217D /* Extension */,
 				27FF10F421910C040007217D /* AppDelegate.swift */,
-				27FF10F621910C040007217D /* ViewController.swift */,
+				27FF10F621910C040007217D /* ListViewController.swift */,
 				27FF10F821910C040007217D /* Main.storyboard */,
 				27FF110621910C2A0007217D /* SupportingFiles */,
 			);
@@ -86,6 +96,50 @@
 				27FF110021910C110007217D /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		27FF110721910D910007217D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		27FF110821910DA40007217D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27FF110921910DAD0007217D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		27FF110A21910DBB0007217D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27FF110B21910DCE0007217D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27FF110C21910DE60007217D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				27FF111B219114B10007217D /* APIClient.swift */,
+				27FF111D2191159C0007217D /* Connectivity.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		64AE33A0EC9E85B3BBA54138 /* Frameworks */ = {
@@ -210,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27FF10F721910C040007217D /* ViewController.swift in Sources */,
+				27FF111E2191159C0007217D /* Connectivity.swift in Sources */,
+				27FF10F721910C040007217D /* ListViewController.swift in Sources */,
 				27FF10F521910C040007217D /* AppDelegate.swift in Sources */,
+				27FF111C219114B10007217D /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
