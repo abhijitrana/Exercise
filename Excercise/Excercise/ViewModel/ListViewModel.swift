@@ -46,7 +46,7 @@ class ListViewModel: BaseViewModel {
             switch either {
             case .success(let data):
                 self.dataArray = []
-                self.dataArray = data.rows.filter({($0.title ?? "").count > 0 && ($0.description ?? "").count > 0 })
+                self.dataArray = data.rows.filter({(($0.title ?? "").count > 0 && ($0.description ?? "").count > 0) || ($0.title ?? "").count > 0 })
             case .error(let error):
                 self.showError?(error)
             }

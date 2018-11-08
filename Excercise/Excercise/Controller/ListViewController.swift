@@ -41,9 +41,11 @@ class ListViewController: ListDesignViewController {
             DispatchQueue.main.async {
                 if strongself.viewModel.isLoading {
                     strongself.activityIndicator.startAnimating()
+                    strongself.loadingLabel.alpha = 1.0
                     strongself.tableViewList.alpha = 0.0
                 } else {
                     strongself.activityIndicator.stopAnimating()
+                    strongself.loadingLabel.alpha = 0.0
                     strongself.tableViewList.alpha = 1.0
                 }
             }
