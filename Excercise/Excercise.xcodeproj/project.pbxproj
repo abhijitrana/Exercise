@@ -24,6 +24,7 @@
 		FC77F5352191900500CADB50 /* ExcerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77F5342191900500CADB50 /* ExcerciseUITests.swift */; };
 		FC77F53D21941C8100CADB50 /* ListDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77F53C21941C8100CADB50 /* ListDesignViewController.swift */; };
 		FC77F53F21941E8700CADB50 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77F53E21941E8700CADB50 /* UIView+Anchors.swift */; };
+		FC77F5412194231100CADB50 /* ListCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77F5402194231100CADB50 /* ListCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		FC77F5362191900500CADB50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC77F53C21941C8100CADB50 /* ListDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDesignViewController.swift; sourceTree = "<group>"; };
 		FC77F53E21941E8700CADB50 /* UIView+Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		FC77F5402194231100CADB50 /* ListCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				27FF113421911D390007217D /* ListTableViewCell.swift */,
+				FC77F5402194231100CADB50 /* ListCustomCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				FC77F53D21941C8100CADB50 /* ListDesignViewController.swift in Sources */,
 				27FF112E219117D30007217D /* ListModel.swift in Sources */,
 				27FF1137219120500007217D /* UIImageView+Extensions.swift in Sources */,
+				FC77F5412194231100CADB50 /* ListCustomCell.swift in Sources */,
 				27FF1132219119090007217D /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -77,8 +77,11 @@ class ListViewController: ListDesignViewController {
         self.tableViewList.delegate = self
         self.tableViewList.dataSource = self
         
+        //Register Custom cell
+        self.tableViewList.register(ListCustomCell.self, forCellReuseIdentifier: "cell")
+        
         //Table View Height Increased Automatic
-        self.tableViewList.estimatedRowHeight = 200
+        self.tableViewList.estimatedRowHeight = 80
         self.tableViewList.rowHeight = UITableViewAutomaticDimension
         
         //Table View with refresh controlller
@@ -113,7 +116,7 @@ class ListViewController: ListDesignViewController {
 extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListCustomCell
         cell.setData = self.viewModel.dataArray[indexPath.row]
         return cell
     }
