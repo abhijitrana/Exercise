@@ -78,7 +78,14 @@ class ListCustomCell:UITableViewCell {
         didSet {
             guard let data =  setData else {return}
             self.cellTitle.text = data.title
-            self.cellDescription.text = data.description
+            
+            if let desc = data.description {
+                self.cellDescription.numberOfLines = 0
+                self.cellDescription.text = desc
+            }else {
+                self.cellDescription.numberOfLines = 1
+                self.cellDescription.text = " "
+            }
             
             self.cellImage.loadImageUsingCacheWithURLString(data.imageHref ?? "", placeHolder: UIImage(named: "placeholder")) { _ in }
         }
