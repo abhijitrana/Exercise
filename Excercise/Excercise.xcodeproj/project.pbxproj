@@ -20,9 +20,10 @@
 		27FF113521911D390007217D /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF113421911D390007217D /* ListTableViewCell.swift */; };
 		27FF1137219120500007217D /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF1136219120500007217D /* UIImageView+Extensions.swift */; };
 		27FF11392191215B0007217D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF11382191215B0007217D /* UIView+Extension.swift */; };
-		27FF113B219123F40007217D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF113A219123F40007217D /* DetailViewController.swift */; };
 		27FF1143219126170007217D /* ExcerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF1142219126170007217D /* ExcerciseTests.swift */; };
 		FC77F5352191900500CADB50 /* ExcerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77F5342191900500CADB50 /* ExcerciseUITests.swift */; };
+		FC77F53D21941C8100CADB50 /* ListDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77F53C21941C8100CADB50 /* ListDesignViewController.swift */; };
+		FC77F53F21941E8700CADB50 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77F53E21941E8700CADB50 /* UIView+Anchors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,6 @@
 		27FF113421911D390007217D /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		27FF1136219120500007217D /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		27FF11382191215B0007217D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		27FF113A219123F40007217D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		27FF1140219126170007217D /* ExcerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FF1142219126170007217D /* ExcerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseTests.swift; sourceTree = "<group>"; };
 		27FF1144219126170007217D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +67,8 @@
 		FC77F5322191900400CADB50 /* ExcerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC77F5342191900500CADB50 /* ExcerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseUITests.swift; sourceTree = "<group>"; };
 		FC77F5362191900500CADB50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC77F53C21941C8100CADB50 /* ListDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDesignViewController.swift; sourceTree = "<group>"; };
+		FC77F53E21941E8700CADB50 /* UIView+Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				27FF1136219120500007217D /* UIImageView+Extensions.swift */,
 				27FF11382191215B0007217D /* UIView+Extension.swift */,
+				FC77F53E21941E8700CADB50 /* UIView+Anchors.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -181,7 +184,7 @@
 			children = (
 				27FF113321911D1F0007217D /* Cells */,
 				27FF1131219119090007217D /* ListViewController.swift */,
-				27FF113A219123F40007217D /* DetailViewController.swift */,
+				FC77F53C21941C8100CADB50 /* ListDesignViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -411,14 +414,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC77F53F21941E8700CADB50 /* UIView+Anchors.swift in Sources */,
 				27FF111E2191159C0007217D /* Connectivity.swift in Sources */,
 				27FF113521911D390007217D /* ListTableViewCell.swift in Sources */,
 				27FF1130219117FB0007217D /* ListViewModel.swift in Sources */,
 				27FF11392191215B0007217D /* UIView+Extension.swift in Sources */,
 				27FF10F521910C040007217D /* AppDelegate.swift in Sources */,
 				27FF111C219114B10007217D /* APIClient.swift in Sources */,
+				FC77F53D21941C8100CADB50 /* ListDesignViewController.swift in Sources */,
 				27FF112E219117D30007217D /* ListModel.swift in Sources */,
-				27FF113B219123F40007217D /* DetailViewController.swift in Sources */,
 				27FF1137219120500007217D /* UIImageView+Extensions.swift in Sources */,
 				27FF1132219119090007217D /* ListViewController.swift in Sources */,
 			);

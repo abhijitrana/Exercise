@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class ListViewController: ListDesignViewController {
 
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var tableViewList: UITableView!
+//    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+//    @IBOutlet weak var tableViewList: UITableView!
     
     //TODO:- Refresher
     let refreshControl:UIRefreshControl = {
@@ -28,8 +28,6 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationItem.largeTitleDisplayMode = .always
         setupObservers()
         setupTableView()
     }
@@ -129,10 +127,10 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier :"DetailViewController") as! DetailViewController
-        viewController.setData = self.viewModel.dataArray[indexPath.row]
-        self.navigationController?.pushViewController(viewController, animated: true)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(withIdentifier :"DetailViewController") as! DetailViewController
+//        viewController.setData = self.viewModel.dataArray[indexPath.row]
+//        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
