@@ -42,19 +42,22 @@ class ListViewModel: BaseViewModel {
         self.isLoading = true
         
         // Fetch API Data
-        self.client.fetch { either in
+        self.client.fetch { [weak self] either in
+            
+            guard let strongself = self else {return}
+            
             switch either {
             case .success(let data):
-                self.dataArray = []
-                self.dataArray = data.rows.filter({(($0.title ?? "").count > 0 && ($0.description ?? "").count > 0) || ($0.title ?? "").count > 0 })
+                strongself.dataArray = []
+                strongself.dataArray = data.rows.filter({(($0.title ?? "").count > 0 && ($0.description ?? "").count > 0) || ($0.title ?? "").count > 0 })
             case .error(let error):
-                self.showError?(error)
+                strongself.showError?(error)
             }
             //Hide Loader
-            self.isLoading = false
+            strongself.isLoading = false
             
             //Reload Tableview
-            self.reloadData?()
+            strongself.reloadData?()
         }
     }
 }
